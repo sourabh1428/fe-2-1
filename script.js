@@ -113,15 +113,17 @@ function updateJohnsProfession() {
 
 // 10. Profession Count
 function getTotalProfessions() {
-  let a=[{developer:0},{admin:0},{manager:0}];
+  let a=[{developer:0},{admin:0},{manager:0},{sde:0}];
   data.forEach((x)=>{
     if(x.profession=="developer"){
       a[0].developer+=1;
     }
     else if(x.profession=="admin"){
       a[1].admin+=1;
-    }else{
+    }else if(x.profession=="manager"){
       a[2].manager+=1;
+    }else if(x.profession=="sde"){
+      a[3].sde+=1;
     }
   });
 
