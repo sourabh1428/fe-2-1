@@ -21,7 +21,7 @@ function addData() {
   let z=prompt("enter profession");
 
 
-  data.push({name:x,age:y,profession:z});
+  data.push({name:x,age:parseInt(y),profession:z});
   console.log(data);
 }
 
